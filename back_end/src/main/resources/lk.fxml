@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<Tab text="LK Metric" fx:controller="org.csu.metrics.controller.LKController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="459.0" >
+            <children>
+                <HBox alignment="CENTER" layoutX="8.0" layoutY="439.0" prefHeight="68.0" prefWidth="690.0">
+                    <children>
+                        <Button fx:id="openTrBt" mnemonicParsing="false" onMouseClicked="#openLkFile" prefHeight="20.0" prefWidth="110.0" text="Open" textAlignment="CENTER">
+                            <effect>
+                                <Blend />
+                            </effect>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="5.0" right="40.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="startTrBt" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#startLk" prefWidth="110.0" text="Start" textAlignment="CENTER">
+                            <effect>
+                                <Blend />
+                            </effect>
+                            <HBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <TableView fx:id="table" layoutX="37.0" layoutY="70.0" prefHeight="200.0" prefWidth="623.0">
+                    <columns>
+                        <TableColumn fx:id="c1" prefWidth="155" text="CS (Class Size)" />
+                        <TableColumn fx:id="c2" prefWidth="155" text="NOO (Number of Operations Overridden)" />
+                        <TableColumn fx:id="c3" prefWidth="155" text="NOA (Number of Added)" />
+                        <TableColumn fx:id="c4" prefWidth="155" text="SI (Specialization Index)" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

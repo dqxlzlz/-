@@ -1,0 +1,25 @@
+<uml:Model xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:id="6fb3c342-4f98-4205-ad9d-3d1bafc5dad4" xmi:version="20131001">
+    <packagedElement name="Database" xmi:id="82a41c0a-8e79-43aa-b5f8-afd0f3d80ae8" xml:type="uml:Class">
+        <ownedAttribute name="db1" xmi:id="4a5f62aa-ce54-4d01-91be-3a0eb71eca15" xml:type="7157ca11-e7a8-41d9-8854-cb6a6a52729e"/>
+        <ownedAttribute name="db2" xmi:id="15c70181-dbf9-482c-ab8c-819bb1199150" xml:type="70971c80-ac38-441b-800c-6736c3eae035"/>
+        <ownedAttribute name="db3" xmi:id="4a5f62aa-ce54-4d01-91be-3a0eb71eca15" xml:type="7157ca11-e7a8-41d9-8854-cb6a6a52729e"/>
+        <ownedAttribute name="db5" xmi:id="15c70181-dbf9-482c-ab8c-819bb1199150" xml:type="70971c80-ac38-441b-800c-6736c3eae035"/>
+        <ownedOperation name="PKdb" xmi:id="1edc5db7-3348-460a-acee-d552333d3106">
+            <ownedAtribute name="pkdb1" xmi:id="5449be61-f297-42c0-bc18-2cc5e505bd1b" xml:type="7158ba11-e7a8-41d9-8854-cb6a6a52729e"/>
+        </ownedOperation>
+        <ownedOperation name="P22K" xmi:id="1edc5db7-3338-460a-acee-d552333d3106">
+            <ownedAtribute name="Column1" xmi:id="5449ae61-f297-42c0-bc18-2cc5e505bd1b" xml:type="7157ba11-e7a8-41d9-8854-cb6a6a52729e"/>
+        </ownedOperation>
+        <ownedOperation name="PK22" xmi:id="1edc5db7-3338-460a-acee-d552333d3106">
+            <ownedAtribute name="Column1" xmi:id="5449ae61-f297-42c0-bc18-2cc5e505bd1b" xml:type="7157ba11-e7a8-41d9-8854-cb6a6a52729e"/>
+        </ownedOperation>
+    </packagedElement>
+    <packagedElement name="TABLE" xmi:id="a74a1162-46d1-46a8-bfbb-d502cad593fa" xml:type="uml:Class">
+        <ownedAttribute name="Column1" xmi:id="4a5f62aa-ce54-4d01-90be-3a0eb71eca15" xml:type="7157ba11-e7a8-41d9-8854-cb6a6a52729e"/>
+        <ownedAttribute name="Column34" xmi:id="15c70181-dbf9-482c-aa8c-819bb1199150" xml:type="70970c80-ac38-441b-800c-6736c3eae035"/>
+        <ownedAttribute name="Column2" xmi:id="15c70181-dbf9-482c-aa8c-819bb1199150" xml:type="70970c80-ac38-441b-800c-6736c3eae035"/>
+        <ownedOperation name="PK77" xmi:id="1edc5db7-3338-460a-acee-d552333d3106">
+            <ownedAtribute name="Columntt" xmi:id="5449ae61-f297-42c0-bc18-2cc5e505bd1b" xml:type="7157ba11-e7a8-41d9-8854-cb6a6a52729e"/>
+        </ownedOperation>
+    </packagedElement>
+</uml:Model>

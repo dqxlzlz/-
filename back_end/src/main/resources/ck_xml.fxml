@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+
+<Tab text="CK-XML Metric" fx:controller="org.csu.metrics.controller.CKController" xmlns="http://javafx.com/javafx/8"
+     xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="292.0" prefWidth="488.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="8.0" layoutY="439.0" prefHeight="68.0" prefWidth="690.0">
+                    <children>
+                        <Button fx:id="openCKBt" mnemonicParsing="false" onMouseClicked="#openCKFile" prefHeight="20.0" prefWidth="110.0" text="Open" textAlignment="CENTER">
+                            <effect>
+                                <Blend />
+                            </effect>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="5.0" right="40.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="startCKBt" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#executeXMLMetric" prefWidth="110.0" text="Start" textAlignment="CENTER">
+                            <effect>
+                                <Blend />
+                            </effect>
+                            <HBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <TableView fx:id="table" layoutX="15.0" layoutY="60.0" prefHeight="200.0" prefWidth="677.0">
+                    <columns>
+                        <TableColumn fx:id="c1" prefWidth="75.0" text="File" />
+                        <TableColumn fx:id="c2" prefWidth="75.0" text="Class" />
+                        <TableColumn fx:id="c3" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="c4" prefWidth="75.0" text="WMC" />
+                        <TableColumn fx:id="c5" prefWidth="75.0" text="RFC" />
+                        <TableColumn fx:id="c6" prefWidth="75.0" text="LCOM" />
+                        <TableColumn fx:id="c7" prefWidth="75.0" text="CBO" />
+                        <TableColumn fx:id="c8" prefWidth="75.0" text="DIT" />
+                        <TableColumn fx:id="c9" prefWidth="75.0" text="NOC" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </content>
+</Tab>

@@ -1,0 +1,12 @@
+# 项目排除路径
+/target/
+# 项目依赖文件
+/libs/
+# 待度量的代码
+/src/main/resources/codeToBeMetric/
+# 度量后生成的图片
+/src/main/resources/metriced_imgs/
+#vue的node_modules
+/metric_web/node_modules/
+#.idea
+/.idea/
