@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model
+    xmlns:a="attribute"
+    xmlns:c="collection"
+    xmlns:o="object">
+    <o:Classes>
+        <o:Class Id="o1">
+            <a:Name>Libirary_card</a:Name>
+            <a:Code>Library_card</a:Code>
+            <c:Attributes>
+                <o:Attribute Id="o2">
+                    <a:Name>id</a:Name>
+                    <a:Code>id</a:Code>
+                    <a:DataType>int</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o3">
+                    <a:Name>author</a:Name>
+                    <a:Code>author</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-
+                    </a:Attribute.Visibility>
+                </o:Attribute>
+            </c:Attributes>
+            <c:Operations>
+                <o:Operation Id="o4">
+                    <a:Name>addBook</a:Name>
+                    <a:Code>addBook</a:Code>
+                    <a:ReturnType>void</a:ReturnType>
+                    <a:TemplateBody>{books.add(book);}</a:TemplateBody>
+                </o:Operation>
+                <o:Operation Id="o5">
+                    <a:Name>delBook</a:Name>
+                    <a:Code>delBook</a:Code>
+                    <a:ReturnType>void</a:ReturnType>
+                    <a:TemplateBody>{books.del(book);}</a:TemplateBody>
+                </o:Operation>
+            </c:Operations>
+        </o:Class>
+        <o:Class Id="o6">
+            <a:Name>Person</a:Name>
+            <a:Code>Person</a:Code>
+            <c:Attributes>
+                <o:Attribute Id="o7">
+                    <a:Name>name</a:Name>
+                    <a:Code>name</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o8">
+                    <a:Name>age</a:Name>
+                    <a:Code>age</a:Code>
+                    <a:DataType>int</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o9">
+                    <a:Name>sex</a:Name>
+                    <a:Code>sex</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o10">
+                    <a:Name>birthday</a:Name>
+                    <a:Code>birthday</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+            </c:Attributes>
+            <c:Operations>
+                <o:Operation Id="o11">
+                    <a:Name>getName</a:Name>
+                    <a:Code>getName</a:Code>
+                    <a:ReturnType>String</a:ReturnType>
+                    <a:TemplateBody>-</a:TemplateBody>
+                </o:Operation>
+                <o:Operation Id="o12">
+                    <a:Name>setName</a:Name>
+                    <a:Code>setName</a:Code>
+                    <a:ReturnType>void</a:ReturnType>
+                    <a:TemplateBody>-</a:TemplateBody>
+                </o:Operation>
+            </c:Operations>
+        </o:Class>
+        <o:Class Id="o13">
+            <a:Name>Teacher</a:Name>
+            <a:Code>Teacher</a:Code>
+            <c:Attributes>
+                <o:Attribute Id="o14">
+                    <a:Name>id</a:Name>
+                    <a:Code>id</a:Code>
+                    <a:DataType>int</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o15">
+                    <a:Name>department</a:Name>
+                    <a:Code>department</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="16">
+                    <a:Name>card</a:Name>
+                    <a:Code>card</a:Code>
+                    <a:DataType>Library_card</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+            </c:Attributes>
+            <c:Operations>
+                <o:Operation Id="o17">
+                    <a:Name>getCard</a:Name>
+                    <a:Code>getCard</a:Code>
+                    <a:ReturnType>Library_card</a:ReturnType>
+                    <a:TemplateBody>-</a:TemplateBody>
+                </o:Operation>
+                <o:Operation Id="o18">
+                    <a:Name>setCard</a:Name>
+                    <a:Code>setCard</a:Code>
+                    <a:ReturnType>void</a:ReturnType>
+                    <a:TemplateBody>-</a:TemplateBody>
+                </o:Operation>
+            </c:Operations>
+        </o:Class>
+        <o:Class Id="o19">
+            <a:Name>Book</a:Name>
+            <a:Code>Book</a:Code>
+            <c:Attributes>
+                <o:Attribute Id="o20">
+                    <a:Name>id</a:Name>
+                    <a:Code>id</a:Code>
+                    <a:DataType>int</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o21">
+                    <a:Name>name</a:Name>
+                    <a:Code>name</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+                <o:Attribute Id="o22">
+                    <a:Name>author</a:Name>
+                    <a:Code>author</a:Code>
+                    <a:DataType>String</a:DataType>
+                    <a:Attribute.Visibility>-</a:Attribute.Visibility>
+                </o:Attribute>
+            </c:Attributes>
+            <c:Operations>
+                <o:Operation Id="o23">
+                    <a:Name>getPrice</a:Name>
+                    <a:Code>getPrice</a:Code>
+                    <a:ReturnType>double</a:ReturnType>
+                    <a:TemplateBody>-</a:TemplateBody>
+                </o:Operation>
+                <o:Operation Id="o24">
+                    <a:Name>setPrice</a:Name>
+                    <a:Code>setPrice</a:Code>
+                    <a:ReturnType>void</a:ReturnType>
+                    <a:TemplateBody>-</a:TemplateBody>
+                </o:Operation>
+            </c:Operations>
+        </o:Class>
+    </o:Classes>
+    <o:Generalizations>
+        <o:Generalization Id="o25">
+            <a:Name>Generalization_1</a:Name>p
+            <a:Code>Generalization_1</a:Code>
+            <c:Object1>
+                <o:Class Ref="o6"/>
+            </c:Object1>
+            <c:Object2>
+                <o:Class Ref="o13"/>
+            </c:Object2>
+        </o:Generalization>
+    </o:Generalizations>
+    <o:Dependencies>
+        <o:Dependency Id="o26">
+            <a:Name>Dependency_1</a:Name>
+            <a:Code>Dependency_1</a:Code>
+            <c:Object1>
+                <o:Class Ref="o1"/>
+            </c:Object1>
+            <c:Object2>
+                <o:Class Ref="o6"/>
+            </c:Object2>
+        </o:Dependency>
+    </o:Dependencies>
+    <o:Compositions>
+        <o:Composition Id="o27">
+            <a:Name>Composition_1</a:Name>
+            <a:Code>Composition_1</a:Code>
+            <c:Object1>
+                <o:Class Ref="o19"/>
+            </c:Object1>
+            <c:Object2>
+                <o:Class Ref="o1"/>
+            </c:Object2>
+        </o:Composition>
+    </o:Compositions>
+</Model>
