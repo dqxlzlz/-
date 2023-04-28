@@ -13,8 +13,8 @@ module.exports = defineConfig({
     //以上的ip和端口是我们本机的;下面为需要跨域的
     proxy: {//配置跨域
       '/api': {
-        target: 'http://kx.miaoguoge.xyz:9000',
-        // target: 'http://localhost:9000',
+        // target: 'http://kx.miaoguoge.xyz:9000',
+        target: 'http://localhost:9000',
         ws: true,
         changOrigin: true,//允许跨域
         pathRewrite: {

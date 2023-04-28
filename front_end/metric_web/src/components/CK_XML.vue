@@ -11,13 +11,27 @@
       <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
       <div class="el-upload__tip" slot="tip">只能上传.xml文件</div>
     </el-upload>
-
+<!-- 
     <el-image
         v-if="img_show"
         style="width: 300px; height: 300px"
         :src="true_url[0]"
         :preview-src-list="true_url">
-    </el-image>
+    </el-image> -->
+    <!-- <div class="block">
+    <el-carousel>
+      <el-carousel-item v-for="item in true_url" :key="item">
+        <img :src="item" style="width: 300px; height: 300px">
+      </el-carousel-item>
+    </el-carousel>
+  </div> -->
+  <div class="demo-image">
+  <div class="block" v-for="item in true_url" :key="item">
+    <el-image
+      style="width: 300px; height: 300px;float: left;"
+      :src="item"></el-image>
+  </div>
+</div>
   </div>
 </template>
 
@@ -71,9 +85,11 @@ export default {
         },
         responseType: 'blob'
       }).then(response=>{
+        console.log("dat:",response.data)
+
         let url = window.URL.createObjectURL(response.data)
         this.true_url.push(url);
-        console.log(url)
+        console.log("picture:", url)
       })
     },
     success(message) {
@@ -92,6 +108,21 @@ export default {
 }
 </script>
 
-<style scoped>
 
+<style>
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 150px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+     background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #d3dce6;
+  }
 </style>

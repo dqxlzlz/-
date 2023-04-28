@@ -41,16 +41,16 @@
           label="noc"
           width="70">
       </el-table-column>
-      <el-table-column
+      <!-- <el-table-column
           prop="nof"
           label="nof"
           width="70">
-      </el-table-column>
-      <el-table-column
+      </el-table-column> -->
+      <!-- <el-table-column
           prop="nopf"
           label="nopf"
           width="70">
-      </el-table-column>
+      </el-table-column> -->
       <el-table-column
           prop="nosi"
           label="nosi"
@@ -61,16 +61,16 @@
           label="lcom"
           width="70">
       </el-table-column>
-      <el-table-column
+      <!-- <el-table-column
           prop="nosf"
           label="nosf"
           width="70">
-      </el-table-column>
-      <el-table-column
+      </el-table-column> -->
+      <!-- <el-table-column
           prop="nosm"
           label="nosm"
           width="70">
-      </el-table-column>
+      </el-table-column> -->
       <el-table-column
           prop="wmc"
           label="wmc"
@@ -81,11 +81,11 @@
           label="nom"
           width="70">
       </el-table-column>
-      <el-table-column
+      <!-- <el-table-column
           prop="nopm"
           label="nopm"
           width="70">
-      </el-table-column>
+      </el-table-column> -->
       <el-table-column
           prop="rfc"
           label="rfc"
